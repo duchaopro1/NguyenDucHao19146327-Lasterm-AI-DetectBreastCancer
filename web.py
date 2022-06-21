@@ -29,7 +29,6 @@ if uploaded_file is not None:
     #Button: nút dự đoán sau khi up ảnh
     Genrate_pred = st.button("Generate Prediction") 
     
-    if Genrate_pred:
-    
+    if Genrate_pred:    
         prediction = model.predict(img).argmax()
         st.write("**Predicted Label for the image is {}**".format(map_dict[prediction]))
