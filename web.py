@@ -44,6 +44,8 @@ if selected == "Diagnostic":
             if Genrate_pred:    
                   prediction = model.predict(img).argmax()
                   st.write("**Predicted Label for the image is {}**".format(map_dict[prediction]))
+                  if(prediction == 1): 
+                    st.write("Bạn có một khối u không mấy hiền lành :< Nhưng mà đừng lo vì chúng ta đã phát hiện ra nó")
    
 if selected == "More":
       st.title("BỆNH UNG THƯ VÚ")
