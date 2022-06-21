@@ -78,6 +78,6 @@ if selected == "More":
     st.write("""**Phẫu thuật**: là cắt bỏ khối u toàn bộ hoặc một phần, và có thể loại bỏ hạch nách khi cần.""")
     st.write("""**Xạ trị**: là chiếu tia bức xạ vào vùng bệnh nhằm mục tiêu phá hủy tế bào ung thư. Xạ trị có thể được thực hiện sau phẫu thuật hoặc sau hóa trị.""")
     st.write("""**Liệu pháp nội tiết**: là điều trị quan trọng nhất dành cho trường hợp UTV có thụ thể nội tiết ER (+) và/hoặc PR (+). Thuốc ức chế hoặc ngăn chận tác động của các hormon nội tiết – được biết là có liên quan đến quá trình tăng sinh tế bào ung thư. Liệu pháp nội tiết có thể được sử dụng sau phẫu thuật hoặc giai đoạn muộn.""")
-    st.write("""**Liệu pháp kháng HER2**: à điều trị quan trọng dành cho trường hợp UTV có HER2 dương tính. Thuốc ức chế tác động của các thụ thể HER2 – được biết là có liên quan quá trình tăng sinh tế bào ung thư."")
-    st.title("Để biết thêm thông tin chi tiết: https://benhvienk.vn/ung-thu-vu-va-nhung-dieu-ban-khong-nen-bo-qua-nd91360.html")
+    st.write("""**Liệu pháp kháng HER2**: à điều trị quan trọng dành cho trường hợp UTV có HER2 dương tính. Thuốc ức chế tác động của các thụ thể HER2 – được biết là có liên quan quá trình tăng sinh tế bào ung thư.""")
+    st.title("Để biết thêm thông tin chi tiết: https://benhvienk.vn/ung-thu-vu-va-nhung-dieu-ban-khong-nen-bo-qua-nd91360.html/")
     
