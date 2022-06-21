@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
-model = tf.keras.models.load_model("Hue.h5") #model m train
+model = tf.keras.models.load_model("Detect(mini).h5") #model m train
 
 selected = option_menu(None, ["Diagnostic", "More"], 
     icons=[ "upload", 'bookmark-fill'], 
@@ -44,9 +44,15 @@ if selected == "Diagnostic":
             if Genrate_pred:    
                   prediction = model.predict(img).argmax()
                   st.write("**Predicted Label for the image is {}**".format(map_dict[prediction]))
+                  if(prediction == 0): 
+                    st.write("Chỉ là khối u lành tính thoi <3 Bạn hãy để ý đến sức khỏe của mình nhé <3")
                   if(prediction == 1): 
                     st.write("Bạn có một khối u không mấy hiền lành :< Nhưng mà đừng lo vì chúng ta đã phát hiện ra nó <3 Hãy để bác sĩ tư vấn cho bạn nhé <3 It will be okay")
-   
+                  if(prediction == 2): 
+                    st.write("Bạn đang rất là khỏe mạnh đấy <3")
+      
+
+
 if selected == "More":
     st.title("BỆNH UNG THƯ VÚ")
     st.title("------------------------------------------------")
