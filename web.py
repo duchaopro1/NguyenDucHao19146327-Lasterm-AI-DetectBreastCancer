@@ -19,10 +19,10 @@ map_dict = {0: 'BENIGN',
  
 if uploaded_file is not None:
     # Convert the file
-    img = image.load_img(uploaded_file,target_size=(250,250)) #xử lí ảnh theo cách m làm
+    img = image.load_img(uploaded_file,target_size=(32,32)) #xử lí ảnh theo cách m làm
     st.image(uploaded_file, channels="RGB") #hiển thị ảnh
     img = img_to_array(img)
-    img = img.reshape(1,250,250,3)
+    img = img.reshape(1,32,32,3)
     img = img.astype('float32')
     img = img/255
         
