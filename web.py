@@ -45,7 +45,7 @@ if selected == "Diagnostic":
                   prediction = model.predict(img).argmax()
                   st.write("**Predicted Label for the image is {}**".format(map_dict[prediction]))
                   if(prediction == 1): 
-                    st.write("Bạn có một khối u không mấy hiền lành :< Nhưng mà đừng lo vì chúng ta đã phát hiện ra nó")
+                    st.write("Bạn có một khối u không mấy hiền lành :< Nhưng mà đừng lo vì chúng ta đã phát hiện ra nó <3 Hãy để bác sĩ tư vấn cho bạn nhé <3 It will be okay")
    
 if selected == "More":
       st.title("BỆNH UNG THƯ VÚ")
