@@ -1,4 +1,4 @@
-# Đoạn code này không cần quan tâm có chạy được trên python hay không, vì nó sẽ chạy trực tiếp trên github, do trên python chưa cài streamlit
+
 import numpy as np
 import streamlit as st
 import tensorflow as tf
@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Choose an image file", type=["jpg","jpeg","png
 
 map_dict = {0: 'BENIGN',
             1: 'MALIGNANT',
-            2: 'NORMAL'} #vì của t có 2 laoij là bệnh với ko bị bệnh nên t làm cái này, cái này sẽ tùy vô giải thuật của m
+            2: 'NORMAL'}
     
  
 if uploaded_file is not None:
